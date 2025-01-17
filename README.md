@@ -5,7 +5,6 @@ A Python-based voice command application that listens for specific phrases such 
 ## Features
 
 - Voice recognition powered by the ```speech_recognition``` library
-- Supports multi-language commands using Google Translate
 - Simulate mouse clicks or keyboard actions with ```pyautogui```
 - Customizable commands via ```config.json```
 - Activate or deactivate commands using a simple ```enabled``` flag in the configuration file
@@ -56,11 +55,6 @@ Example:
 - ```button```: Button to simulate for ```mouse_click``` actions (```left```, ```right```, or ```middle```)
 - ```microphone_sensitivity```: Adjust for ambient noise (in seconds)
 
-## Multi-Language Support
-The app automatically translates commands spoken in different languages to English for processing. For example:
-- Saying "Proxima diapositiva" (Spanish for "Next Slide") triggesr the ```next slide``` action
-- Translation is handled by the ```googletrans``` library
-
 ## Usage
 1. Run the application:
     ```bash
@@ -81,7 +75,6 @@ The app automatically translates commands spoken in different languages to Engli
     - ```speech_recognition```
     - ```pyautogui```
     - ```pyaudio```
-    - ```googletrans```
 
 - Install dependencies with:
     ```bash
