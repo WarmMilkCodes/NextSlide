@@ -61,7 +61,7 @@ Example:
 
 2. Speak your commands into the microphone
 
-3. Actions will be performed based on the configuration in ```config.json``
+3. Actions will be performed based on the configuration in ```config.json```
 
 **Example Commands**
 - **"Next Slide"**: Simulates pressing the right arrow key
