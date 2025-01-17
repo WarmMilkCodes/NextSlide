@@ -1,0 +1,20 @@
+{
+    "commands": {
+        "next slide": {
+            "enabled": true,
+            "action": "key_press",
+            "key": "right"
+        },
+        "previous slide": {
+            "enabled": true,
+            "action": "key_press",
+            "key": "left"
+        },
+        "click mouse": {
+            "enabled": false,
+            "action": "mouse_click",
+            "button": "left"
+        }
+    },
+    "microphone_sensitivity": 0.5
+}
