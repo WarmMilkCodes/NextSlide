@@ -45,7 +45,7 @@ Example:
         }
     },
     "microphone_sensitivity": 0.5
-    }
+    }```
 
     - ```enabled```: Toggle the command on/off (```true``` or ```false```)
     - ```action```: Specify the type of action (```key_press``` or ```mouse_click```)
