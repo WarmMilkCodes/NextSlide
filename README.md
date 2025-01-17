@@ -25,7 +25,7 @@ A Python-based voice command application that listens for specific phrases such 
 ## Configuration
 Customize the ```config.json``` file to define and manage commands.
 Example:
-    ```json
+```
     {
     "commands": {
         "next slide": {
@@ -45,7 +45,8 @@ Example:
         }
     },
     "microphone_sensitivity": 0.5
-    }```
+    }
+```
 
     - ```enabled```: Toggle the command on/off (```true``` or ```false```)
     - ```action```: Specify the type of action (```key_press``` or ```mouse_click```)
