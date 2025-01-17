@@ -81,7 +81,7 @@ The app automatically translates commands spoken in different languages to Engli
     - ```speech_recognition```
     - ```pyautogui```
     - ```pyaudio```
-    - ```googletrans===4.0.0-rc1```
+    - ```googletrans```
 
 - Install dependencies with:
     ```bash
