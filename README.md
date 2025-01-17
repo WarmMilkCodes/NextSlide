@@ -53,3 +53,39 @@ Example:
 - ```key```: Key to simulate for ```key_press``` actions
 - ```button```: Button to simulate for ```mouse_click``` actions (```left```, ```right```, or ```middle```)
 - ```microphone_sensitivity```: Adjust for ambient noise (in seconds)
+
+## Usage
+1. Run the application:
+    ```bash
+    python main.py
+
+2. Speak your commands into the microphone
+
+3. Actions will be performed based on the configuration in ```config.json``
+
+**Example Commands**
+- **"Next Slide"**: Simulates pressing the right arrow key
+- **"Previous Slide"**: Simulates pressing the left arrow key
+- **"Mouse Click"**: Simulates a *left* mouse click
+
+## Requirements
+- Python 3.7+
+- Libraries:
+    - ```speech_recognition```
+    - ```pyautogui```
+    - ```pyaudio```
+
+Install these dependencies with:
+    ```bash
+    pip install -r requirements.txt
+
+## Troubleshooting
+- **Command not recognized or disabled**:
+    - Check that the command exists in ```config.json``` and is ```enabled: true```
+    - Ensure proper formatting and case matching in ```config.json```
+- **Microphone not working**:
+    - Test your microphone with another application
+    - Adjust ```microphone_sensitivity``` in ```config.json```
+
+## Contributing
+Contributions are welcome. Feel free to submit a pull request or open an issue for bugs or feature requests.
