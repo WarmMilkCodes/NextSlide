@@ -48,8 +48,8 @@ Example:
     }
 ```
 
-    - ```enabled```: Toggle the command on/off (```true``` or ```false```)
-    - ```action```: Specify the type of action (```key_press``` or ```mouse_click```)
-    - ```key```: Key to simulate for ```key_press``` actions
-    - ```button```: Button to simulate for ```mouse_click``` actions (```left```, ```right```, or ```middle```)
-    - ```microphone_sensitivity```: Adjust for ambient noise (in seconds)
+- ```enabled```: Toggle the command on/off (```true``` or ```false```)
+- ```action```: Specify the type of action (```key_press``` or ```mouse_click```)
+- ```key```: Key to simulate for ```key_press``` actions
+- ```button```: Button to simulate for ```mouse_click``` actions (```left```, ```right```, or ```middle```)
+- ```microphone_sensitivity```: Adjust for ambient noise (in seconds)
