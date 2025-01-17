@@ -75,7 +75,7 @@ Example:
     - ```pyautogui```
     - ```pyaudio```
 
-Install these dependencies with:
+- Install these dependencies with:
     ```bash
     pip install -r requirements.txt
 
