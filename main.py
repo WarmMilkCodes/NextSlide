@@ -1,6 +1,7 @@
 import json
 import speech_recognition as sr
 import pyautogui
+from googletrans import Translator
 
 # Load configuration from JSON file
 def load_config(config_file="config.json"):
@@ -34,6 +35,18 @@ def listen_for_command(sensitivity):
             print(f"Could not request results; {e}")
     return ""
 
+# Translate voice commands
+translator = Translator()
+
+def translate_to_english(command):
+    try:
+        translated = translator.translate(command, src="auto", dest="en").text.lower()
+        print(f"Translated command: '{translated.text}'")
+        return translated.text.lower().strip()
+    except Exception as e:
+        print(f"Translation error: {e}")
+        return command.lower().strip()
+
 # Perform actions based on the recognized command and configuration
 def perform_action(command, config):
     actions = config.get("commands", {})
@@ -53,10 +66,7 @@ def perform_action(command, config):
     print("Command not recognized or disabled. Waiting for a valid command...")
 
 if __name__ == "__main__":
-    # Load configuration
     config = load_config()
-
-    # Display loaded commands for debugging
     print("Loaded Commands:")
     for cmd, details in config.get("commands", {}).items():
         print(f" - {cmd}: Enabled={details.get('enabled', False)}")
@@ -66,6 +76,9 @@ if __name__ == "__main__":
 
     while True:
         # Listen and process commands
-        command = listen_for_command(sensitivity)
-        if command:
-            perform_action(command, config)
+        raw_command = listen_for_command(sensitivity)
+        if raw_command:
+            # Translate to English
+            translated_command = translate_to_english(raw_command)
+            # Perform action based on command
+            perform_action(translated_command, config)
